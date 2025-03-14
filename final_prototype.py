@@ -31,13 +31,13 @@ agent_storage = SqliteAgentStorage(table_name="proto_testing", db_file="tmp/prot
 # Initialize all tools
 slack_tools = SlackTools()
 zoom_tools = ZoomTools(
-    account_id="GRcsgkUbS7mPJuVFDDvZvw",
-    client_id="CJoZ_rEZTUeLnM5qor8KMg",
-    client_secret="RYONwPYBv8eWnXtdnJTJ8bPVsthaoLcB"
+    account_id="ACCOUNT_ID",
+    client_id="CLIENT_ID",
+    client_secret="CLIENT_SECRET"
 )
 gmail_tools = GmailTools(credentials_path='credentials.json')
 google_calendar_tools = GoogleCalendarTools(credentials_path='credentials.json',token_path='calender.json')
-toolset = ComposioToolSet(api_key="syt0bne6age3qgqeweefdb")
+toolset = ComposioToolSet(api_key="API_KEY_HERE")
 
 #---------- COMMUNICATION AGENTS ----------#
 
